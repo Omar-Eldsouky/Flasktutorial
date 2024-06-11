@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Reset Password</legend>
+                <div class="form-group">
+                    <label for="email" class="form-control-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control form-control-lg">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="password" class="form-control-label">Password</label>
+                    <input type="password" id="password" name="password" class="form-control form-control-lg">
+                </div> -->
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info">Submit</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="">
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">{{ legend }}</legend>
+            <div class="form-group">
+                <label class="form-control-label">Title</label>
+                <input type="text" class="form-control form-control-lg" name="title" value="{{ new_title }}">
+            </div>
+            <div class="form-group">
+                <label class="form-control-label">Content</label>
+                <textarea class="form-control form-control-lg" name="content">{{ new_content }}</textarea>
+            </div>
+        </fieldset>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-info">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
